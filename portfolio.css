@@ -227,19 +227,19 @@ a {
 }
 
 #project1 {
-    background-image: url(./shubh_image/stock-price-prediction.jpg);
+    background-image: url(shubh_image/stock-price-prediction.jpg);
 }
 
 #project2 {
-    background-image: url(./shubh_image/heart-disease-prediction.jpg);
+    background-image: url(shubh_image/heart-disease-prediction.jpg);
 }
 
 #project3 {
-    background-image: url(./shubh_image/jarvis.jpg);
+    background-image: url(shubh_image/jarvis.jpg);
 }
 
 #project4 {
-    background-image: url(./shubh_image/study-sync.jpg);
+    background-image: url(shubh_image/study-sync.jpg);
 }
 
 .project-number-left {
