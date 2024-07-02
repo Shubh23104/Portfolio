@@ -1,0 +1,1022 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #6366f1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+.first-container{
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar{
+    /* background-color: gray; */
+    width: 88%;
+    /* border: 2px solid black; */
+    /* margin-top: 1rem; */
+}
+
+.name {
+    /* background-color: green; */
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    width: 50%;
+}
+
+#first-letter {
+    display: inline-block;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+}
+
+#remaining-letter {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: relative;
+    bottom: 12px;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    /* background-color: violet; */
+    display: inline-block;
+    /* border: 2px solid aqua; */
+    width: 49%;
+    position: relative;
+    bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-menu {
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-menu, #skill-menu, #contact-menu{
+    font-size: 1.6rem;
+    padding: 18px;
+    color: var(--dark-gray);
+}
+
+#project-menu:hover, #skill-menu:hover, #contact-menu:hover{
+    color: #000;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    /* border-radius: 0.375rem; */
+    position:absolute;
+    right: 5%;
+    top: 2rem;
+    font-size: 2.8rem;
+    /* font-weight: 600; */
+    color: var(--gray);
+    cursor: pointer;
+}   
+
+.about-section {
+    /* border: 2px solid black; */
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.about {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#about-name {
+    font-size: 2rem;
+    color:#555;
+}
+
+#about-position{
+    font-size: 2.5rem;
+    color: var(--gray);
+}
+
+#about-description {
+    font-size: 1.25rem;
+    font-family: 'Montserrat';
+}
+
+#about-button{
+    width: 17%;
+    height: 3rem;
+    background-color: #e84949;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px grey;
+}
+
+@keyframes scaleImage {
+    0% {
+        filter: grayscale(1);
+        scale: 1;
+    }
+
+    50% {
+        filter: grayscale(0);
+        scale: 0.9;
+        box-shadow: 3px 3px 10px black;
+    }
+
+    100% {
+        filter: grayscale(1);
+        scale: 1;
+    }
+}
+
+.image {
+    /* border: 2px solid black; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+
+#shubh-image {
+    width: 80%;
+    height: 80%;
+}
+
+.second-container{
+    margin-top: 10rem;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.Projects {
+    width: 88%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 1200px; */
+}
+
+.project-name {
+    margin-top: 2rem;
+    width: 88%;
+    /* border: 2px solid green; */
+    text-align: center;
+}
+
+.project-name h1 {
+    font-size: 6.5rem;
+    color: #e84949;
+}
+
+.project-card {
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    width: 90%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* position: absolute; */
+    box-shadow: 0px 0px 40px #1f1f1f;
+    transition: all 0.4s;
+}
+
+#project1 {
+    background-image: url(./shubh_image/stock-price-prediction.jpg);
+}
+
+#project2 {
+    background-image: url(./shubh_image/heart-disease-prediction.jpg);
+}
+
+#project3 {
+    background-image: url(./shubh_image/jarvis.jpg);
+}
+
+#project4 {
+    background-image: url(./shubh_image/study-sync.jpg);
+}
+
+.project-number-left {
+    right: -40px;
+    top: -45px;
+}
+
+.project-number {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: none;
+    z-index: 10;
+    transition-delay: 1s;
+    transition: transform 2s;
+}
+
+.project-content {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid aqua; */
+    color: white;
+    z-index: 5;
+    margin-top: 8%;
+    transition: all 0.4s;
+}
+
+.project-technologies {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-technologies img {
+    width: 50px;
+}
+
+.project-title {
+    /* border: 2px solid red; */
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1.5rem;
+}
+
+.project-about {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1.2rem;
+}
+
+.project-explore {
+    /* border: 2px solid yellow; */
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}
+
+.read-button {
+    width: 25%;
+    height: 100%;
+}
+
+.btn {
+    background-color: #e84949;
+    color: white;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    /* transition: all 0.5s; */
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.project-github {
+    /* border: 2px solid purple; */
+    cursor: pointer;
+    width: 8%;
+    margin-left: 1rem;
+    /* background-color: #575252; */
+}
+
+.github {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.left-project {
+    margin-left: 10%;
+}
+
+.right-project {
+    margin-left: 40%;
+}    
+
+.project-card::before {
+    content: "";
+    color: #fff;
+    position: absolute;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+}
+
+.project-card::after {
+    content: "";
+    color: #fff;
+    position: absolute;
+    background: #1f1f1f9a;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(1);
+}
+
+.project-card:hover + .project-number {
+    display: block;
+}
+
+.third-container {
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-container {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 88%;
+}
+
+.about_my_skill {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skill-heading {
+    position: relative;
+    z-index: -9;
+    line-height: 50px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #e84949;
+    font-size: 50px;
+}
+
+.caps {
+    font-size: 80px;
+}
+
+.skill_about {
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+
+.skill_about p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 15px 0;
+    color:#555;
+    font-size: 17px;
+}
+
+.Skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+    position: relative;
+    justify-content: center;
+}
+
+.skill-logo{
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+
+.skill-logo:hover {
+    scale: 1.2;
+}
+
+.four-container {
+    /* border: 2px solid black; */
+    background-color: gainsboro;
+    width: 100%;
+    margin-top: 13rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactus{
+    width: 88%;
+    /* border: 2px solid green; */
+}
+
+.contact-me {
+    /* border: 2px solid yellow; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactus-heading {
+    padding-bottom: 0.5rem;
+    font-size: 5em;
+    color: #e84949;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.contactus-sub-heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #343d68aa;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.contact-detail{
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus-form {
+    /* border: 2px solid teal; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 75%;
+}
+
+.formfield{
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    background: #ffffff97;
+    font-weight: 500;
+}
+
+.msg{
+    height: auto;
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding-top: 1rem;
+}
+
+.btn-pink {
+    border: none;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    display: flex;
+}
+
+.btn-pink{
+    background-color: #e84949;
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-pink p {
+    /* border: 2px solid navy; */
+    padding-top: 0.35rem;
+    text-align: center;
+    font-size: 23px;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.fa-solid{
+    font-weight: 900;
+}
+
+.submit-icon {
+    padding: 0 1rem;
+    font-size: 2rem;
+    /* border: 2px solid green; */
+}
+
+.five-container {
+    background: #343d68;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 88%;
+    display: flex;
+    padding: 7.5rem 2rem;
+}
+
+.nav-footer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-footer a {
+    color: white;
+    font-size: 1.35rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.icon-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.icon-wrapper i {
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-wrapper i:hover {
+    color: #e84949;
+}
+
+.nav-footer a:hover {
+    color: #e84949;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 23rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .image {
+        width: 40%;
+    }
+    
+    #shubh-image {
+        width: 85%;
+        height: 85%;
+    }
+
+    .project-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-content {
+        width: 70%;
+    }
+
+    .right-project {
+        margin-left: 0%;
+    }
+
+    .left-project {
+        margin-left: 0%;
+    }
+
+    #contactus {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-me {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactus-heading {
+        font-size: 60px;
+        padding-bottom: 1rem;
+    }
+
+    .contactus-sub-heading {
+        font-size: 2rem;
+    }
+
+    .contactus-form {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-detail {
+        width: 90%;
+    }
+
+    .formfield {
+        /* border: 2px solid navy; */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image {
+        width: 70%;
+        height: 25rem;
+    }
+    
+    #shubh-image {
+        width: 85%;
+        height: 85%;
+    }
+
+    .Projects {
+        width: 100%;
+    }
+
+    .project-content {
+        width: 80%;
+        height: 70%;
+        margin-top: 0%;
+    }
+
+    .project-technologies {
+        gap: 20px;
+    }
+
+    .project-technologies img {
+        width: 40px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .project-about {
+        font-size: 1rem;
+    }
+
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about_my_skill {
+        width: 100%;
+    }
+
+    .Skills {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .skill-logo {
+        width: 80px;
+    }
+
+    .skill_about {
+        width: 90%;
+        text-align: center;
+    }
+
+    .skill-heading {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 3.4rem 2rem;
+    }
+
+    .nav-footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .icon-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #about-button{
+        width: 30%;
+        height: 4rem;
+    }
+
+    .image {
+        width: 90%;
+    }
+    
+    #shubh-image {
+        width: 85%;
+        height: 85%;
+    }
+
+    .project-name h1 {
+        font-size: 5.5rem;
+    }
+
+    .project-explore {
+        width: 100%;
+        height: 3.5rem;
+    }
+    
+    .read-button {
+        width: 40%;
+        height: 100%;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .project-github {
+        width: 15%;
+        margin-left: 1.3rem;
+    }
+}
+
+/* and (min-width: 585px) */
+@media screen and (max-width: 858px){
+    .first-container{
+        width: 100%;
+        /* border: 2px solid yellowgreen; */
+    }
+
+    .nav-bar{
+        /* background-color: gray; */
+        width: 100%;
+        /* border: 2px solid black; */
+        /* margin-top: 1rem; */
+    }
+
+    .menu {
+        position: relative;
+        top: 100%;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* background: rgb(0, 0, 0, .1); */
+        /* border: 2px solid black; */
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.menu{
+        height: 17.7rem;
+    }
+
+    .menu-button {
+        display: inline-flex;
+    }
+
+    #check:checked~.menu-button #menu-icon {
+        display: none;
+    }
+
+    .menu-button #close-icon {
+        display: none;
+    }
+
+    #check:checked~.menu-button #close-icon {
+        display: block;
+    }
+
+    .menu-button #menu-icon, .menu-button #close-icon{
+        border: 2px solid black;
+    }
+
+    .flex-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+        height: 100%;
+    }
+
+    .contactus-heading {
+        font-size: 40px;
+    }
+
+    .contactus-sub-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 486px){
+    .name{
+        width: auto;
+    }
+
+    #first-letter {
+        display: inline-block;
+        font-size: 4.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #remaining-letter {
+        display: inline-block;
+        position: relative;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-button {
+        position:absolute;
+        right: 5%;
+        top: 1.5rem;
+        font-size: 2rem;
+    }
+    
+    .about {
+        width: 100%;
+        height: 33rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #about-button{
+        width: 40%;
+        height: 4rem;
+    }
+
+    .image {
+        width: 100%;
+        height: 22rem;
+    }
+    
+    #shubh-image {
+        width: 85%;
+        height: 85%;
+    }
+
+    .btn-pink {
+        padding: 0.4rem 1rem;
+    }
+
+    .btn-pink p {
+        width: 100%;
+        padding-top: 0.35rem;
+        font-size: 20px;
+        font-family: "Be Vietnam Pro", sans-serif;
+    }
+    
+    .fa-solid{
+        font-weight: 900;
+    }
+    
+    .submit-icon {
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        padding:1.4rem 0%;
+    }
+
+    .nav-footer a {
+        font-size: 1.1rem;
+    }
+
+    .icon-wrapper i {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .project-name h1 {
+        font-size: 4rem;
+    }
+
+    .project-content {
+        width: 87%;
+        height: 80%;
+    }
+}

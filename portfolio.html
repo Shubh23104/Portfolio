@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Patel Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/userAsset/NavLogo2.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="first-container">
+        <div class="nav-bar">
+            <div class="name">
+                <h1 id="first-letter">S</h1>
+                <h1 id="remaining-letter">hubh Patel</h1>
+            </div>
+
+            <input type="checkbox" id="check">
+
+            <label class="menu-button" for="check">
+                <!-- <img src="studysync project image/Hamburger.svg" alt="menuButton" class="menu-icon" /> -->
+                <i class="bx bx-menu" id="menu-icon"></i>
+                <i class="bx bx-x" id="close-icon"></i>
+            </label>
+    
+            <div class="menu">
+                <div class="flex-menu">
+                    <a href="#project" id="project-menu">Projects</a>
+                    <a href="#skill" id="skill-menu">Skills</a>
+                    <a href="#contactus" id="contact-menu">Contact Me</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about">
+                <div id="about-name">Hi! Shubh Patel</div>
+                <div id="about-position">I am a Software Developer</div>
+                <div id="about-description">I’m a software developer and here is my portfolio website. Here you’ll learn about my journey as a software developer.</div>
+                <button id="about-button" onclick="location.href='shubh_image/Shubh_Patel_Resume.pdf';">Resume</button>
+            </div>
+
+            <div class="image">
+                <img src="shubh_image/shubh.jpg" alt="error" id="shubh-image" width="345" height="390">
+            </div>
+        </div>
+    </div>
+
+    <div class="second-container" id="project">
+        <div class="Projects">
+            <div class="project-name">
+                <h1>Projects</h1>
+            </div>
+            
+            <div id="project1" class="project-card">
+                <div class="project-number project-number-left" >01</div>
+                <div class="project-content left-project">
+                    <div class="project-technologies">
+                        <img src="shubh_image/python-logo.png" alt="error" id="python1">
+                        <img src="shubh_image/numpy.png" alt="error" id="numpy1">
+                        <img src="shubh_image/pandas.png" alt="error" id="pandas1">
+                        <img src="shubh_image/matplotlib.png" alt="error" id="matplotlib1">
+                        <img src="shubh_image/scikit-learn.png" alt="error" id="scikitlearn1">
+                    </div>
+    
+                    <div class="project-title">
+                        <h1>Stock Price Prediction</h1>
+                    </div>
+    
+                    <div class="project-about">
+                        Developed a predictive model to forecast stock prices using linear regression
+                    </div>
+    
+                    <div class="project-explore">
+                        <div class="read-button">
+                            <button class="btn">Read More</button>
+                        </div>
+    
+                        <div class="project-github">
+                            <!-- <img src="studysync project image/github.svg" alt="error" class="github"> -->
+                            <a href="https://github.com/Shubh23104/Tesla_Stock_Price_Prediction">
+                                <img src="shubh_image/github.png" alt="error" class="github">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project2" class="project-card">
+                <div class="project-number project-number-left">02</div>
+                <div class="project-content right-project">
+                    <div class="project-technologies">
+                        <img src="shubh_image/python-logo.png" alt="error" id="python2">
+                        <img src="shubh_image/numpy.png" alt="error" id="numpy2">
+                        <img src="shubh_image/pandas.png" alt="error" id="pandas2">
+                        <img src="shubh_image/matplotlib.png" alt="error" id="matplotlib2">
+                        <img src="shubh_image/scikit-learn.png" alt="error" id="scikitlearn2">
+                    </div>
+    
+                    <div class="project-title">
+                        <h1>Heart Disease Prediction</h1>
+                    </div>
+    
+                    <div class="project-about">
+                        Developed a predictive model to determine the likelihood of heart disease using logistic regression
+                    </div>
+    
+                    <div class="project-explore">
+                        <div class="read-button">
+                            <button class="btn">Read More</button>
+                        </div>
+    
+                        <div class="project-github">
+                            <a href="https://github.com/Shubh23104/Heart_Disease_Prediction"><img src="shubh_image/github.png" alt="error" class="github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project3" class="project-card">
+                <div class="project-number project-number-left">03</div>
+                <div class="project-content left-project">
+                    <div class="project-technologies">
+                        <img src="shubh_image/python-logo.png" alt="error" id="python3">
+                    </div>
+    
+                    <div class="project-title">
+                        <h1>Python J.A.R.V.I.S</h1>
+                    </div>
+    
+                    <div class="project-about">
+                        This project is an implementation of a basic J.A.R.V.I.S (Just A Rather Very Intelligent System) using Python. Inspired by the fictional intelligent assistant from Marvel's Iron Man series, this project aims to create a simplified version of a virtual assistant that can perform various tasks and interact with users through voice commands.
+                    </div>
+    
+                    <div class="project-explore">
+                        <div class="read-button">
+                            <button class="btn">Read More</button>
+                        </div>
+    
+                        <div class="project-github">
+                            <a href="https://github.com/Shubh23104/Python_J.A.R.V.I.S_Project"><img src="shubh_image/github.png" alt="error" class="github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project4" class="project-card">
+                <div class="project-number project-number-left">04</div>
+                <div class="project-content right-project">
+                    <div class="project-technologies">
+                        <img src="shubh_image/html.webp" alt="error" id="html">
+                        <img src="shubh_image/css.png" alt="error" id="css">
+                    </div>
+    
+                    <div class="project-title">
+                        <h1>Study Sync</h1>
+                    </div>
+    
+                    <div class="project-about">
+                        This project is an implementation by Using HTML and CSS for Practice With Responsive Behaviour
+                    </div>
+    
+                    <div class="project-explore">
+                        <div class="read-button">
+                            <button class="btn">Read More</button>
+                        </div>
+    
+                        <div class="project-github">
+                            <a href="https://github.com/Shubh23104/StudySync_Project"><img src="shubh_image/github.png" alt="error" class="github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third-container" id="skill">
+        <div class="skill-container">
+            <div class="about_my_skill">
+                <h2 class="skill-heading">
+                    <span class="caps">M</span>e and
+                    <br>
+                    MyTech Stack
+                </h2>
+    
+                <div class="skill_about">
+                    <p>Hi Everyone My name is Shubh Patel. I From Visnagar And I currently pursuing Bachelor of Engineering in Computer Science And Engineering At Government Engineering College, Patan. I currently learning about machine learning. and Having a good knowledge of python.</p>
+                    <p>I am a Practical knowledge seeker. To work in an environment where my skill and knowledge reflects the growth the company and enhance the my knowledge as well as experience. Eager to take on new challenges and excel in a fast-paced environment. Posses strong in Data Structure and Algorithms, Machine Learning, Python and a willingness to learn and grow. Positive and Resorceful, with a dedication to achieving goals.</p>
+                </div>
+            </div>
+    
+            <div class="Skills">
+                <img src="shubh_image/python-logo.png" alt="error" id="python" class="skill-logo">
+                <img src="shubh_image/dsa.png" alt="error" id="dsa" class="skill-logo">
+                <img src="shubh_image/scikit-learn.png" alt="error" id="scikitlearn" class="skill-logo">
+                <img src="shubh_image/pandas.png" alt="error" id="pandas" class="skill-logo">
+                <img src="shubh_image/numpy.png" alt="error" id="numpy" class="skill-logo">
+                <img src="shubh_image/matplotlib.png" alt="error" id="matplotlib" class="skill-logo">
+                <img src="shubh_image/git.png" alt="error" id="git" class="skill-logo">
+                <img src="shubh_image/github2.png" alt="error" id="github" class="skill-logo">
+                <img src="shubh_image/sql.png" alt="error" id="sql" class="skill-logo">
+                <img src="shubh_image/html2.png" alt="error" id="html" class="skill-logo">
+                <img src="shubh_image/css2.png" alt="error" id="css" class="skill-logo">
+                <img src="shubh_image/cpp.png" alt="error" id="cpp" class="skill-logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="four-container">
+        <div id="contactus">
+            <div class="contact-me">
+                <h1 class="contactus-heading">Contact Me</h1>
+                <h3 class="contactus-sub-heading">Questions, Thoughts, Or Just Want To Say Hello?</h3>
+            </div>
+
+            <div class="contact-detail">
+                <form action="#" class="contactus-form">
+                    <input type="text" name="name" class="formfield" placeholder="Enter your name">
+                    <input type="email" name="email" class="formfield" placeholder="Enter your email address">
+                    <input type="text" name="subject" class="formfield" placeholder="Enter your subject">
+                    <textarea name="message" id class="msg formfield" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    <div>
+                        <button type="submit" class="btn-pink" id="submit-btn">
+                            <p>Send Message</p>
+                            <i class="bx bx-paper-plane submit-icon fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="five-container">
+        <div class="footer-container">
+            <div class="nav-footer">
+                <a href="#project" id="project-footer">Projects</a>
+                <a href="#skill" id="skill-footer">Skills</a>
+                <a href="#contactus" id="contact-footer">Contact Me</a>
+            </div>
+
+            <div class="icon-wrapper">
+                <a href="https://www.linkedin.com/in/shubh-patel-882b90272/"><i class='bx bxl-linkedin-square' id="linkedin-icon"></i></a>
+                <a href="https://github.com/Shubh23104"><i class='bx bxl-github' id="github-icon"></i></a>
+                <a href="https://twitter.com/Shubh_Patel_40"><i class='bx bxl-twitter' id="twitter-icon"></i></a>
+                <a href="#"><i class='bx bxl-instagram' id="instragram-icon"></i></a>
+                <a href="mailto: shubh23104@gmail.com"><i class='bx bx-envelope' id="email-icon"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
